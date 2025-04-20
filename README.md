@@ -32,8 +32,11 @@ Logistic Regression performs the best on all 3 metrics. With just a few features
 
 ## Future Improvements
 1) Improved Feature Engineering
+
 Additional features such as momentum indicators, volatility measures, or cross‑asset signals can be included. We can also incorporate external macroeconomic or sentiment data to further augment the dataset. This would likely play into the strengths of the more complex models given their ability to model non-linear interactions and high-dimensional settings.
+
 2) Refining the rolling‑window scheme
+
 To further improve the project, we can consider optimising window length, overlap, or retraining frequency via cross‑validation
 
 ## Guide to the Github Repository 
