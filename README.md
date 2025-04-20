@@ -30,6 +30,8 @@ The results of our models are as follows:
 
 Logistic Regression performs the best on all 3 metrics. With just a few features used like “Open”, “High”, “Low” and “Volume” and about 75,000 observations, the model is less likely to overfit and can effectively separate the classes without being overwhelmed by noise or complex interactions. In such settings, simpler models like logistic regression often perform well and can even rival more complex algorithms, as there is less risk of the model being misled by spurious patterns or high-dimensional noise. Other more complicated models were simply not able to match the performance of the logistic model because of the characteristic of the dataset. 
 
+Note: Within each model, we also have other implementations as well, for example we include rolling window or have different settings for hyperparameter tuning. Only the best results of each implementation for each model is included in the table above.
+
 ## Future Improvements
 1) Improved Feature Engineering
 
@@ -56,12 +58,14 @@ pip install -r requirements.txt
 
 **Repository Structure**
 1. **`Stocks` folder**: Contains the raw data of all the stocks that we obtained from [Kaggle](https://www.kaggle.com/datasets/borismarjanovic/price-volume-data-for-all-us-stocks-etfs/data).
-2. nasdaq_screener_1742913519579.csv: Used as a reference to filter out the top 50 stocks in market capitalization 
+2. nasdaq_screener_1742913519579.csv: Used as a reference to filter out the top 50 stocks in market capitalization from Yahoo Finance
 3. filtered_stocks_combined.csv: Final cleaned dataset
-4. logit.ipynb: Codes that implement the logit model
-5. data_preprocessing.ipynb: Codes that clean the data and perform EDA
-6. xgboost.ipynb: Codes that implement the XGBoost model
-7. RNN.ipynb: Codes that implement the RNN model
+4. data_preprocessing.ipynb: Codes that clean the raw dataset and perform EDA
+5. logistic_regression_model.ipynb: Codes that implement the logit model
+6. xgboost_model.ipynb: Codes that implement the XGBoost model
+7. RNN_model.ipynb: Codes that implement the RNN model
+8. LSTM_model.ipynb: Codes that implement the LSTM model
+9. MLP_model.ipynb: Codes that implement the MLP model
 
 This project is a group assignment for a NUS course - CS3244 - Machine Learning.
 
