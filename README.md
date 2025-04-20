@@ -23,7 +23,7 @@ The results of our models are as follows:
 |         | Accuracy | F1 Score | Area under ROC Curve |
 |--------------|--------|--------|--------|
 | Logistic Regression | 0.7647 | 0.7777 | 0.8280 |
-| MLP | 0.5118 | 0.5121 | 0.5155 | 
+| MLP | 0.5130 | 0.5072 | 0.5201 | 
 | RNN | 0.5165 | 0.6706 | 0.5098 | 
 | LSTM | 0.5119 | 0.3550 | 0.5119 | 
 | XGBoost | 0.6419 | 0.6734 | 0.7047 | 
